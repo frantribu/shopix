@@ -17,6 +17,19 @@ function NavBar() {
               </a>
 
                {/*buscador*/}
+               <div className='flex items-center justify-center '>
+                <input type="text"
+                  placeholder='Buscador'
+                  className='border border-gray-300 px-3 py-2 rounded-l-md'
+                />
+                <button className='bg-white border border-gray-300 px-2 rounded-r-md'>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="20" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                  </svg>
+                </button>
+              </div>
 
               {/* Boton hamburguesa */}
               <div className="md:hidden">
