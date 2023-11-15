@@ -25,17 +25,17 @@ export default function TiendaPagina({ product }: { product: Product[] }) {
                 <path d="M17 17h-11v-14h-2" />
                 <path d="M6 5l14 1l-1 7h-13" />
             </svg></button>
-            <ul className="grid gap-3 grid-cols-2 lg:grid-cols-3">
+            <ul className="grid gap-5 m-3 grid-cols-2 lg:grid-cols-3">
                 {product.map((product: Product) => (
                     <li key={product.id}>
-                        <div>
-                        <Link href="" className="group block overflow-hidden">
+                        <div className="border  border-gray-300 rounded-lg">
+                        <Link href={`/tienda/${product.title}`} className="group block overflow-hidden ">
                             <Image
                                 src={product.image}
                                 alt=""
                                 width={300}
                                 height={300}
-                                className="h-[300px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[300px]"
+                                className=" rounded-lg rounded-b-none h-[300px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[300px] border-b-2"
                             />
                         
                             <div className="relative bg-white pt-3 ">
@@ -58,7 +58,7 @@ export default function TiendaPagina({ product }: { product: Product[] }) {
                                 product: [...cart.product, product],
                                 total: cart.total + product.price,
                             });
-                        }}><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-shopping-cart-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        }}><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-shopping-cart-plus ml-36" width="27" height="27" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
                         <path d="M12.5 17h-6.5v-14h-2" />
@@ -69,6 +69,7 @@ export default function TiendaPagina({ product }: { product: Product[] }) {
                       </div>
                     </li>
                 ))}
+                
         </ul >
         </>
     )

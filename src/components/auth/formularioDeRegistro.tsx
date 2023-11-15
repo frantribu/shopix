@@ -48,9 +48,11 @@ export default function FormularioDeRegistro() {
     }
 
     if (respuesta.status == 201) {
+      alert("Gracias por registrarte!")
       router.push("/auth/iniciar-sesion")
-    }
 
+    }
+     
 
     const token = await respuesta.json();
 
@@ -80,8 +82,8 @@ export default function FormularioDeRegistro() {
                 <input
                   ref={nombreRef}
                   type="nombre"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Ingresar el nombre completo"
+                  className="w-full rounded-lg border border-gray-300 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Nombre completo..."
                 />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
@@ -110,8 +112,8 @@ export default function FormularioDeRegistro() {
                 <input
                   ref={edadRef}
                   type="edad"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Ingresar la edad"
+                  className="w-full rounded-lg border border-gray-300 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Edad..."
                 />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
@@ -146,8 +148,8 @@ export default function FormularioDeRegistro() {
                 <input
                   ref={emailRef}
                   type="email"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Ingresar el email"
+                  className="w-full rounded-lg border border-gray-300 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Email..."
                 />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
@@ -182,8 +184,8 @@ export default function FormularioDeRegistro() {
                 <input
                   ref={passwordRef}
                   type="password"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Ingresar la contraseña"
+                  className="w-full rounded-lg border border-gray-300 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Contraseña..."
                 />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">

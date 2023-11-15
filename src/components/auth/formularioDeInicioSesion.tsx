@@ -66,8 +66,7 @@ export default function FormularioDeInicioSesion() {
                     <h1 className="text-2xl font-bold sm:text-3xl">Inicia sesion aqui!</h1>
 
                     <p className="mt-4 text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla
-                        eaque error neque ipsa culpa autem, at itaque nostrum!
+                        Al iniciar sesion tendras la posibilidad de chatear con nuestro equipo de atencion al cliente para consultar cualquier duda que tengas <br/>¡No lo dudes mas!
                     </p>
                 </div>
 
@@ -79,8 +78,8 @@ export default function FormularioDeInicioSesion() {
                             <input
                                 ref={emailRef}
                                 type="email"
-                                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                                placeholder="Enter email"
+                                className="w-full rounded-lg border border-gray-300 p-4 pe-12 text-sm shadow-sm"
+                                placeholder="Email..."
                             />
 
                             <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
@@ -109,8 +108,8 @@ export default function FormularioDeInicioSesion() {
                             <input
                             ref={passwordRef}
                                 type="password"
-                                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                                placeholder="Enter password"
+                                className="w-full rounded-lg border border-gray-300 p-4 pe-12 text-sm shadow-sm"
+                                placeholder="Contraseña..."
                             />
 
                             <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
@@ -140,15 +139,15 @@ export default function FormularioDeInicioSesion() {
 
                     <div className="flex items-center justify-between">
                         <p className="text-sm text-gray-500">
-                            No account?
-                            <a className="underline" href="">Sign up</a>
+                            No tienes cuenta?
+                            <a className="underline" href="/auth/registrarse">Registrate</a>
                         </p>
 
                         <button
                             type="submit"
                             className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
                         >
-                            Sign in
+                            Iniciar sesion
                         </button>
                     </div>
                 </form>

@@ -48,14 +48,14 @@ export default function PaginaChat() {
 
             <form onSubmit={manejarEnvioDeMensaje} className="text-black p-5">
                 <input
-                    className="py-2 rounded-md pr-32 my-1"
+                    className="py-2  border border-gray-300 rounded-md pr-32 my-1"
                     onChange={(e) => setUsuario(e.target.value)}
                     type="text"
                     placeholder="Nombre de usuario"
                 />
 
                 <input
-                    className="py-2 rounded-md pr-32 m-1"
+                    className="py-2 border border-gray-300 rounded-md pr-32 m-1"
                     onChange={(e) => setMensaje(e.target.value)}
                     value={mensaje}
                     type="text"
@@ -64,7 +64,7 @@ export default function PaginaChat() {
                 <br />
                 <input type="submit" value="Enviar" className="bg-verde-esmeralda m-2 px-4 py-2 rounded-md text-white font-medium" />
 
-                <ul className="text-white bg-gray-950 text-start my-5 p-2 rounded-md">
+                <ul className="text-white  bg-gray-950 text-start my-5 p-2 rounded-md">
                     {todosLosMensajes.map((mensaje, index) => (
                         <li key={index} className="py-2">
                             {mensaje.contenido.match(urlRegex) ? (
